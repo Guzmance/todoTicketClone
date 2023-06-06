@@ -1,0 +1,19 @@
+#ContentButtons {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+  #btnColor {
+    justify-content: center;
+    background-color: #4b4847;
+    color: white;
+    margin-top: 25px;
+    width: 300px;
+    height: 60px;
+  }
+  
+ 

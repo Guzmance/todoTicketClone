@@ -1,0 +1,38 @@
+.nav-item {
+  margin-right: 50px;
+}
+
+.custom-modal .modal-content {
+  background-color: black;
+  border: 2px solid white;
+}
+
+.custom-modal .modal-body,
+.custom-modal .modal-header,
+.custom-modal .modal-footer {
+  gap: 60px;
+  border: none;
+}
+
+.custom-modal .modal-body {
+  color: white;
+  font-size: 20px;
+  padding: 0.8em;
+}
+
+.modal-footer .btn-danger,
+.modal-footer .btn-secondary {
+  background-color: red;
+  border: 1px solid white;
+  transition: background-color 0.5s ease;
+}
+
+.modal-footer .btn-danger:hover,
+.modal-footer .btn-secondary:hover {
+  background-color: #939090;
+  border: 1px solid black;
+}
+
+.custom-modal .modal-header button {
+  background-color: #939090;
+}

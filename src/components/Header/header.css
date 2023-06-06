@@ -1,0 +1,31 @@
+#imgTickets {
+    margin-left: 15%;
+    margin-right: 5%;
+    margin-right: 80px;
+  }
+  
+  #navbar {
+    background-color: #939090;
+    color: white;
+  }
+  
+  .nav-item {
+    margin-right: 30px;
+  }
+
+  .nav-item a{
+    color: white;
+    font-size: 20px;
+  }
+
+  .nav-item a:hover{
+    color: black;
+    text-decoration: underline;
+  }
+
+  #imgUser {
+    margin-left: 10px;
+  }
+
+
+  
