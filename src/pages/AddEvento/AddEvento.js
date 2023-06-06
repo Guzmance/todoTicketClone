@@ -298,6 +298,8 @@ const AddEvento = () => {
                           <tr
                             style={{ backgroundColor: 'red', color: 'white' }}
                           >
+                            <th scope="col">Seleccionar</th>{' '}
+                            {/* Nueva columna de checkboxes */}
                             <th scope="col">Localidades</th>
                             <th scope="col">Precio</th>
                             <th scope="col">Capacidad</th>
@@ -307,11 +309,19 @@ const AddEvento = () => {
                           style={{ backgroundColor: 'gray', color: 'white' }}
                         >
                           <tr>
+                            <td>
+                              <input type="checkbox" />{' '}
+                              {/* Checkbox para la primera fila */}
+                            </td>
                             <th scope="row">ULTRA VIP FAN</th>
                             <td>$200</td>
                             <td>1000</td>
                           </tr>
                           <tr>
+                            <td>
+                              <input type="checkbox" />{' '}
+                              {/* Checkbox para la segunda fila */}
+                            </td>
                             <th scope="row">VIP</th>
                             <td>$100</td>
                             <td>2000</td>
@@ -349,17 +359,110 @@ const AddEvento = () => {
       >
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
-          <p style={{ color: 'white', textAlign: 'center' }}>
-            ¿Estás seguro de que deseas desactivar el evento?
+          <p
+            style={{
+              color: 'white',
+              textAlign: 'center',
+              fontWeight: 'bold',
+              fontSize: '20px',
+              marginBottom: '20px',
+            }}
+          >
+            AGREGAR LOCALIDAD
           </p>
-          {/* Agrega el contenido adicional del modal aquí */}
+          <div
+            className="textcontent text-start "
+            style={{
+              color: 'white',
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr',
+              gap: '25px',
+              marginRight: '30px',
+            }}
+          >
+            <div
+              style={{
+                justifySelf: 'end',
+                display: 'grid',
+                gridTemplateRows: 'repeat(3, auto)',
+                alignItems: 'center',
+                marginBottom: '10px',
+              }}
+            >
+              <p
+                className="h6"
+                id="text-color"
+                style={{
+                  lineHeight: '0.8',
+                  textAlign: 'right',
+                  marginBottom: '15px',
+                  marginTop: '15px',
+                }}
+              >
+                Localidad:
+              </p>
+              <p
+                className="h6"
+                id="text-color"
+                style={{
+                  lineHeight: '0.8',
+                  textAlign: 'right',
+                  marginBottom: '15px',
+                  marginTop: '15px',
+                }}
+              >
+                Precio:
+              </p>
+              <p
+                className="h6"
+                id="text-color"
+                style={{
+                  lineHeight: '1.5',
+                  textAlign: 'right',
+                  marginBottom: '5px',
+                  marginTop: '5px',
+                }}
+              >
+                Capacidad Máxima:
+              </p>
+            </div>
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateRows: 'repeat(3, auto)',
+                alignItems: 'center',
+                marginBottom: '10px',
+              }}
+            >
+              <input
+                type="text"
+                id="miCajaTexto"
+                style={{
+                  borderRadius: '10px',
+                }}
+              />
+              <input
+                type="text"
+                id="miCajaTexto"
+                style={{
+                  borderRadius: '10px',
+                  marginTop: '10px',
+                }}
+              />
+              <input
+                type="text"
+                id="miCajaTexto"
+                style={{
+                  borderRadius: '10px',
+                  marginTop: '10px',
+                }}
+              />
+            </div>
+          </div>
         </Modal.Body>
         <Modal.Footer className="d-flex justify-content-center">
-          <Button variant="secondary" onClick={handleModalClose}>
-            Cancelar
-          </Button>
           <Button variant="danger" onClick={handleModalClose}>
-            Desactivar
+            Agregar
           </Button>
         </Modal.Footer>
       </Modal>
