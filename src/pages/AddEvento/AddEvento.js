@@ -293,13 +293,16 @@ const AddEvento = () => {
 
                   <div className="row mt-2">
                     <div className="container w-100">
-                      <table className="table" id="tableRoles">
+                      <table
+                        className="table"
+                        style={{ borderRadius: '15px', overflow: 'hidden' }}
+                        id="tableRoles"
+                      >
                         <thead>
                           <tr
                             style={{ backgroundColor: 'red', color: 'white' }}
                           >
-                            <th scope="col">Seleccionar</th>{' '}
-                            {/* Nueva columna de checkboxes */}
+                            <th scope="col">Seleccionar</th>
                             <th scope="col">Localidades</th>
                             <th scope="col">Precio</th>
                             <th scope="col">Capacidad</th>
@@ -310,8 +313,7 @@ const AddEvento = () => {
                         >
                           <tr>
                             <td>
-                              <input type="checkbox" />{' '}
-                              {/* Checkbox para la primera fila */}
+                              <input type="checkbox" />
                             </td>
                             <th scope="row">ULTRA VIP FAN</th>
                             <td>$200</td>
@@ -319,8 +321,7 @@ const AddEvento = () => {
                           </tr>
                           <tr>
                             <td>
-                              <input type="checkbox" />{' '}
-                              {/* Checkbox para la segunda fila */}
+                              <input type="checkbox" />
                             </td>
                             <th scope="row">VIP</th>
                             <td>$100</td>

@@ -13,7 +13,7 @@ import AddEvento from './pages/AddEvento/AddEvento';
 function App() {
   return (
     <div className="App">
-      <AddEvento />
+      <Estadistica />
     </div>
   );
 }
